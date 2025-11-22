@@ -52,7 +52,12 @@ timezone             : null
 
 quiet                : false
 verbose              : false
-defaults             : []
+defaults             :
+  scope:
+    path: "" # all files
+    type: "pages"
+  values:
+    layout: "default"
 
 liquid:
   error_mode         : warn
