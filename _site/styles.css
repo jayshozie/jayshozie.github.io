@@ -1,7 +1,7 @@
 body {
     padding: 25%;
     padding-top: 1%;
-    font-family: "JetBrainsMono", monospace;
+    font-family: "JetBrains Mono", monospace;
     background-color: black;
     color: #fae3ef;
 }
@@ -78,7 +78,7 @@ h5 {
 }
 
 p {
-    font-family: "JetBrainsMono", monospace;
+    font-family: "JetBrains Mono", monospace;
     font-size: .95vw;
     text-align: left;
     padding-bottom: 1vw;
