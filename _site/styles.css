@@ -1,13 +1,17 @@
+:root {
+    --color-text: #fae3ef;
+    --color-background: black;
+    --color-separator: gray;
+    --color-link-and-visited: #76b9ec;
+    --color-link-hover-and-active: #85c1ee;
+}
+
 body {
     padding: 25%;
     padding-top: 1%;
     font-family: "JetBrains Mono", monospace;
-    background-color: black;
-    color: #fae3ef;
-}
-
-.underline {
-    border-top: solid gray 1px;
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
 
 .section-separator {
@@ -23,9 +27,9 @@ body {
 .header {
     align-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 1%;
-    padding-bottom: 0%;
+    padding-bottom: 2em;
 }
 
 .content {
@@ -35,52 +39,85 @@ body {
 }
 
 a:link {
-    color: #76b9ec;
+    color: var(--color-link-and-visited);
     text-decoration: none;
 }
 
 a:visited {
-    color: #76b9ec;
+    color: var(--color-link-and-visited);
     text-decoration: none;
     text-decoration: underline;
 }
 
 a:hover,
 a:active {
-    color: #85c1ee;
+    color: var(--color-link-hover-and-active);
     text-decoration: underline;
+}
+
+h1,
+h2 {
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    position: relative;
+    text-align: left;
 }
 
 h1 {
     font-size: 2vw;
     font-weight: bold;
-    text-align: left;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    height: 1px;
+    width: 110%;
+    background-color: var(--color-separator);
+    margin-top: .5em;
+    top: 100%;
+    transform: translateX(-25%);
 }
 
 h2 {
     font-size: 1.5vw;
-    text-align: left;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 1px;
+    width: 115%;
+    background-color: var(--color-separator);
+    margin-top: .75em;
+    top: 100%;
+    transform: translateX(-50%);
 }
 
 h3 {
     font-size: 1.25vw;
-    text-align: left;
 }
 
 h4 {
     font-size: 1.0vw;
-    text-align: left;
 }
 
 h5 {
     font-size: 0.9vw;
-    text-align: left;
 }
 
 p {
     font-family: "JetBrains Mono", monospace;
     font-size: .95vw;
-    text-align: left;
     padding-bottom: 1vw;
     padding-left: 1vw;
     padding-right: 1vw;
