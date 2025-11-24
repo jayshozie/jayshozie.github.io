@@ -104,20 +104,20 @@ h2::after {
 }
 
 h3 {
-    font-size: 1.25vw;
+    font-size: 1.3vw;
 }
 
 h4 {
-    font-size: 1.0vw;
+    font-size: 1.2vw;
 }
 
 h5 {
-    font-size: 0.9vw;
+    font-size: 1.1vw;
 }
 
 p {
     font-family: "JetBrains Mono", monospace;
-    font-size: .95vw;
+    font-size: 1vw;
     padding-bottom: 1vw;
     padding-left: 1vw;
     padding-right: 1vw;
