@@ -2,6 +2,9 @@
 
 ## Short-Term
 
+- [ ] Make the website mobile-friendly, the font looks incredibly small and
+inconsistent right now.
+
 - [ ] Finish Sections
     - [ ] Experience
         - [ ] Add A101 personnel
@@ -12,6 +15,7 @@
         - [ ] Add high school
     - [ ] Projects
         - [ ] Add Pomodoro Done Right when done
+
 - [ ] Add sections
     - [ ] Skills
     - [ ] Exams
