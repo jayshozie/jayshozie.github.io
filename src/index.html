@@ -1,0 +1,251 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <meta name="author" content="Emir Baha Yıldırım">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emir Baha Yıldırım</title>
+        <link rel="icon" type="image/png" href="/assets/images/icon.png" sizes="64x64">
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/images/icon.ico" sizes="64x64">
+    </head>
+
+    <header class="header">
+        <div class="first-header">
+            <h1 style="margin-bottom: 2rem;">Emir Baha Yıldırım</h1>
+            <h4 style="margin-bottom: 2rem;">Civil Eng. Undergrad. | Systems Programmer</h4>
+        </div>
+        <nav class="nav">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#publications" class="nav-link">Publications</a>
+            <a href="#languages" class="nav-link">Languages</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <body class="body">
+        <main id="main">
+            <section id="about">
+                <div>
+                    <h2>About</h2>
+                    <p>
+                    Hi! I'm Emir Baha Yıldırım (aka Jay Levin for easier
+                    pronunciation). I'm a sophomore civil engineering student
+                    and undergraduate researcher at Middle East Technical
+                    University (METU), while also aiming for a career as a
+                    systems developer. I've been programming on and off for the
+                    past 12 years—and diving deep into low-level systems for the
+                    past three. When I'm not studying structural responses or
+                    writing C, I'm a TTRPG, aviation, and gaming nerd, and I
+                    love talking about all three.
+                    </p>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2>Experience</h2>
+                {% for item in site.data.experience %}
+                <article class="item-block">
+                    <div class="item-details">
+                        {% if item.url %}
+                            <h3>{{ item.position }}, <a href="{{ item.url }}">{{ item.company }}</a></h3>
+                        {% else %}
+                            <h3>{{ item.position }}, {{ item.company }}</h3>
+                        {% endif %}
+                        <p> {{ item.start }} - {% if item.end %}{{ item.end }}{% else %}Present{% endif %} </p>
+                        {% if item.description %}
+                        <p>{{ item.description }}</p>
+                        {% endif %}
+                    </div>
+                    {% if item.logo %}
+                    <div class="images">
+                        <img src="{{ item.logo }}" alt="{{ item.logo_alt }}">
+                    </div>
+                    {% endif %}
+                </article>
+                {% endfor %}
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                {% for item in site.data.education %}
+                <article class="item-block">
+                    <div class="item-details">
+                        <h3>{{ item.degree }}, {{ item.institution }}</h3>
+                        {% if item.cgpa %}
+                            <p>GPA: {{ item.cgpa }} | {{ item.start }} - {{ item.end }}</p>
+                        {% else %}
+                            <p>{{ item.start }} - {{ item.end }}</p>
+                        {% endif %}
+                        <p>{{ item.description }}</p>
+                        {% if item.activities %}
+                            <h5 style="font-size: 1.3rem; margin-bottom: 0px;">Activities</h5>
+                            <ul>
+                                {% for i in item.activities%}
+                                    <li>{{ i }}</li>
+                                {% endfor %}
+                                </ul>
+                        {% endif %}
+                    </div>
+                    <div class="item-logo">
+                        <img src="{{ item.logo_path }}" alt="{{ item.logo_alt }}">
+                    </div>
+                </article>
+                {% endfor %}
+            </section>
+
+            <section id="portfolio">
+                <h2><a href="https://github.com/jayshozie/projects">Portfolio</a></h2>
+                {% for item in site.data.portfolio %}
+                <article class="item-block">
+                    <div class="item-details">
+                        <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+                        <h4>{{ item.subtitle }}</h4>
+                        {% if item.version %}
+                            <i><p>{{ item.version }}</p></i>
+                        {% endif %}
+
+                        {% if item.description %}
+                        <details style="font-size: 1.4rem;">
+                            <p>{{ item.description }}<br></p>
+                        </details>
+                        {% endif %}
+
+                        <p>
+                        Maintaining:
+                        {% if item.is_maintaining %}
+                            Yes!
+                        {% else %}
+                            No.
+                        {% endif %}
+                        </p>
+                    </div>
+                    <div class="item-logo">
+                        <img
+                            src="{{ item.logo_path }}"
+                            style="
+                                height: 80px;
+                                width: auto;"
+                                alt="{{ item.logo_alt }}"
+                        >
+                    </div>
+                </article>
+                {% endfor %}
+            </section>
+
+            <section id="publications">
+                <h2>Publications</h2>
+                {% for item in site.data.publications %}
+                <article class="item-block">
+                    <div class="item-details">
+                        {% if item.url %}
+                            <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+                        {% else %}
+                            <h3>{{ item.title }}</h3>
+                        {% endif %}
+                        <h5>{{ item.description }}</h5>
+                        <p>{{ item.authors }}</p>
+                    </div>
+                    <div class="images">
+                        {% for img in item.imgs %}
+                            <img src="{{ img }}" alt="Publication Logo">
+                        {% endfor %}
+                    </div>
+                </article>
+                {% endfor %}
+            </section>
+
+            <section id="languages">
+                <h2>Languages</h2>
+                <article class="item-block">
+                    <div class="item-details">
+                        <h3 style="margin-bottom: 3rem;">Natural Languages</h3>
+                        {% for item in site.data.languages %}
+                            {% if item.category == "natural-languages" %}
+                                <p style="margin-top: 2rem;">
+                                    <b>{{ item.name }}</b><br>
+                                    <b>Level: {{ item.level }}<br></b>
+                                </p>
+                                {% if item.description %}
+                                <details>
+                                    {{ item.description }}
+                                </details>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    <div class="item-details">
+                        <h3 style="margin-bottom: 3rem;">Programming Languages</h3>
+                        {% for item in site.data.languages %}
+                            {% if item.category == "programming-languages" %}
+                                <div>
+                                    <p style="margin-top: 2rem;">
+                                        <b>{{ item.name }}</b><br>
+                                        <u>Level: {{ item.level }}</u><br>
+                                    </p>
+                                    {% if item.description %}
+                                    <details>
+                                        {{ item.description }}
+                                    </details>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </article>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact">
+                    <div class="contact-column">
+                        <h3>Email</h3>
+                        {% for item in site.data.contact %}
+                            {% if item.is_mail %}
+                                <div class="item-block">
+                                    <a href="{{ item.addr }}" class="nav-link" style="font-size: 1.3rem;">
+                                        <p>{{ item.icon }} {{ item.name }}</p>
+                                        {% if item.description %}
+                                        <p style="border-top: 2px solid var(--color-separator);">{{ item.description }}</p>
+                                        {% endif %}
+                                    </a>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    <div class="contact-column">
+                        <h3>Socials</h3>
+                        {% for item in site.data.contact %}
+                            {% if item.is_social %}
+                                <div class="item-block">
+                                    <a href="{{ item.addr }}" class="nav-link" style="font-size: 1.3rem;">
+                                        <p>{{ item.icon }} {{ item.name }}</p>
+                                        {% if item.description %}
+                                        <p style="border-top: 2px solid var(--color-separator);">{{ item.description }}</p>
+                                        {% endif %}
+                                    </a>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+
+    <footer class="footer">
+        <div class="lefters">
+            <h3>Emir Baha Yıldırım</h3>
+        </div>
+        <div class="righters">
+            <a href="https://github.com/jayshozie/jayshozie.github.io">Source Code</a>
+        </div>
+    </footer>
+</html>

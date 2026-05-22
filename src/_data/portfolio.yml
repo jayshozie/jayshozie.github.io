@@ -1,0 +1,54 @@
+- id: jayshell
+  category: "Low-Level Systems Projects"
+  title: "Jayshell"
+  version: "v3.5 Thompson"
+  is_maintaining: true
+  subtitle: "A POSIX-compliant (🤞) command line shell that I've written."
+  description: "A custom shell implementation managing process execution, piping, and redirection, and it has builtins!"
+  logo_path: "/assets/images/c-logo.png"
+  logo_alt: "C Programming Language Logo"
+  url: "https://github.com/jayshozie/jayshell"
+
+- id: dev
+  category: "Dev. Env."
+  title: "dev"
+  version: null
+  is_maintaining: true
+  subtitle: "A repo containing my dev tools and a lot of scripts."
+  description: null
+  logo_path: "/assets/images/icon.png"
+  logo_alt: "Jayshozie's Logo"
+  url: "https://github.com/jayshozie/dev"
+
+- id: tackpm
+  category: "Userspace Applications"
+  title: "TackPM"
+  version: "Under Development"
+  is_maintaining: true
+  subtitle: "A multi-threaded, notcurses TUI to-do manager that uses PostGreSQL as backend."
+  description: null
+  logo_path: "/assets/images/c-logo.png"
+  logo_alt: "C Programming Language Logo"
+  url: "https://github.com/jayshozie/tackpm"
+
+- id: ceng301
+  category: "Lecture Guides for METU Courses"
+  title: "CENG301 Unofficial Repo"
+  version: null
+  is_maintaining: true
+  subtitle: "My unofficial guide for the CENG301 course given at METU."
+  description: "I wrote a comprehensive guide for the course CENG301. It includes my lecture notes, exercises I wrote, exam questions I solved, etc."
+  logo_path: "/assets/images/cpp-logo.png"
+  logo_alt: "C++ Logo"
+  url: "https://github.com/jayshozie/ceng301"
+
+- id: ceng240
+  category: "Lecture Guides for METU Courses"
+  title: "CENG240 Unofficial Repo"
+  version: null
+  is_maintaining: true
+  subtitle: "My unofficial guide for the CENG240 course given at METU."
+  description: "I wrote a comprehensive guide for the course CENG240. It includes my lecture notes, exercises I wrote, exam questions I solved, etc."
+  logo_path: "/assets/images/python-logo.png"
+  logo_alt: "Python Logo"
+  url: "https://github.com/jayshozie/ceng240"

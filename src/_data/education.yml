@@ -1,0 +1,37 @@
+# - id: ceng-msc
+#   degree: "M.Sc. Computer Eng."
+#   institution: "METU/ODTÜ"
+#   cgpa: "3.80/4.00"
+#   start: "2028"
+#   end: "Present"
+#   description: "WARNING: THIS BLOCK IS ONLY FOR TEST. I'M NOT DOING MY MASTER'S RIGHT NOW!"
+#   logo_path: "https://www.metu.edu.tr/system/files/logo_orj/9/9.8.png"
+#   logo_alt: "METU Logo"
+
+- id: ce-bsc
+  degree: "B.Sc. Civil Eng."
+  institution: "METU/ODTÜ"
+  cgpa: null
+  start: "2023"
+  end: "Present"
+  activities:
+    - "Member of the Management Board of METU SFFS"
+    - "Keeper of the Library of METU SFFS"
+    - "Member of the IACES"
+  description: "Contact via email for full transcript."
+  logo_path: "https://www.metu.edu.tr/system/files/logo_orj/9/9.8.png"
+  logo_alt: "METU Logo"
+
+- id: high-school
+  degree: "High School"
+  institution: "Betül Can Anatolian HS"
+  cgpa: null
+  start: "2019"
+  end: "2023"
+  activities:
+    - "Founding Member of the British Parliamentary Debate Club"
+    - "Member of the Graduation Ball Management Team"
+    - "Did voiceover for YKS students with visual problems via an e-Twinning project"
+  description: null
+  logo_path: "https://betulcananadolulisesi.meb.k12.tr/tema/tema/6/assets/images/meb-logo.png"
+  logo_alt: "Betül Can Anatolian High School Logo"

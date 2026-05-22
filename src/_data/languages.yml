@@ -1,0 +1,47 @@
+- id: english
+  category: "natural-languages"
+  name: "English"
+  level: "C1"
+  description: "In our university's English Proficiency Exam, I got a 92%, which corresponds to ~114 in TOEFL."
+
+- id: turkish
+  category: "natural-languages"
+  name: "Turkish"
+  level: "Native"
+  description: "It's my main tongue."
+
+- id: c
+  category: "programming-languages"
+  name: "C"
+  level: "Intermediate"
+  description: "I've been actively programming in C for the past 4 years."
+
+- id: make
+  category: "programming-languages"
+  name: "GNUMake"
+  level: "Intermediate"
+  description: "I write and maintain a lot of Makefiles. I'm not saying I could handle Bash's Makefile for example, but you can check out the ones I've written in my portfolio."
+
+- id: bash
+  category: "programming-languages"
+  name: "Bash/Shell Scripting"
+  level: "Senior"
+  description: "I do all of my scripting in Bash. You can check out my dev env to see some of the scripts I've written."
+
+- id: cpp
+  category: "programming-languages"
+  name: "C++"
+  level: "Intermediate"
+  description: "I'm not educated enough on the newer features, but I've studied OOP before."
+
+- id: rust
+  category: "programming-languages"
+  name: "Rust"
+  level: "Beginner"
+  description: "I'm actively transitioning to it from C."
+
+- id: python
+  category: "programming-languages"
+  name: "Python"
+  level: "Beginner"
+  description: "Not my cup of tea, so I don't spend that much time using it, but I know my way around it."

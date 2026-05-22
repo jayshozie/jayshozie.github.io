@@ -1,0 +1,34 @@
+- id: metu-mail
+  is_mail: true
+  addr: "mailto:yildirim.emir@metu.edu.tr"
+  name: "METUMail"
+  description: "yildirim.emir@metu.edu.tr"
+  icon: "󰇮"
+
+- id: professional-mail
+  is_mail: true
+  addr: "mailto:yildirimemirbaha@gmail.com"
+  name: "Professional Email"
+  description: "yildirimemirbaha@gmail.com"
+  icon: "󰇮"
+
+- id: dev-mail
+  is_mail: true
+  addr: "mailto:jayshozie@gmail.com"
+  name: "Developer Mail"
+  description: "jayshozie@gmail.com"
+  icon: "󰇮"
+
+- id: linkedin
+  is_social: true
+  addr: "https://www.linkedin.com/in/emirbahayildirim/"
+  description: "Emir Baha Yıldırım"
+  name: "LinkedIn"
+  icon: ""
+
+- id: github
+  is_social: true
+  addr: "https://github.com/jayshozie"
+  description: "Jayshozie"
+  name: "GitHub"
+  icon: "󰊤"

@@ -1,0 +1,30 @@
+- id: metu-lab-intern
+  company: "METU/ODTÜ"
+  position: "Undergrad. Researcher"
+  # description: "I'm working as an undergrad. researcher at our department's Structural and Earthquake Eng. Lab. We conducted a full-scale cyclic loading experiment and wrote a conference paper about it, you can find the details in the Publications section."
+  description: "Contributed to research initiatives at the Structural and Earthquake Engineering Laboratory. Co-executed a complex, full-scale cyclic loading experiment on non-structural elements and co-authored a professional conference paper documenting the methodology and findings (detailed in the Publications section)."
+  start: "Jul. 2025"
+  end: null
+  logo: "https://www.metu.edu.tr/system/files/logo_orj/9/9.8.png"
+  logo_alt: "METU Logo"
+  url: "https://structurelab-ce.metu.edu.tr/en"
+
+- id: hhc-intern
+  company: "Hasan Hüseyin Çam A.Ş."
+  position: "Civil Engineering Intern"
+  description: "Assisted in site supervision and observed the construction of a cooperative housing complex (2 blocks, 8,519 m²) and a commercial business center (3,186 m²) located in Ankara, Türkiye."
+  start: "Jun. 2025"
+  end: "Jul. 2025"
+  logo: null
+  logo_alt: null
+  url: "https://www.hasanhuseyincam.com.tr"
+
+- id: a101-personnel
+  company: "A101"
+  position: "Store Personnel"
+  description: "Managed daily inventory, point-of-sale operations, and customer relations at a high-volume branch of Türkiye’s largest discount supermarket chain (13,000+ stores, 60k+ employees). Maintained strict quality control, optimized stock placement, and collaborated within a fast-paced retail team during full-time shifts."
+  start: "Feb. 2024"
+  end: "Apr. 2024"
+  logo: "/assets/images/a101-logo.png"
+  logo_alt: "A101 Logo"
+  url: null

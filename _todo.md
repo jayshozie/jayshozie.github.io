@@ -5,16 +5,14 @@
 - [ ] Make the website mobile-friendly, the font looks incredibly small and
 inconsistent right now.
 
-- [ ] Finish Sections
-    - [ ] Experience
-        - [ ] Add A101 personnel
-        - [ ] Add HHC internship
-    - [ ] Publications
-        - [ ] Add new conference paper when published
-    - [ ] Education
-        - [ ] Add high school
-    - [ ] Projects
-        - [ ] Add Pomodoro Done Right when done
+- [x] Finish Sections
+    - [x] Experience
+        - [x] Add A101 personnel
+        - [x] Add HHC internship
+    - [x] Publications
+        - [x] Add new conference paper when published
+    - [x] Education
+        - [x] Add high school
 
 - [ ] Add sections
     - [ ] Skills
