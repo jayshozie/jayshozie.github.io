@@ -34,6 +34,12 @@
   level: "Intermediate"
   description: "I'm not educated enough on the newer features, but I've studied OOP before."
 
+- id: git
+  category: "programming-languages"
+  name: "Git"
+  level: "Intermediate"
+  description: "I use it all the time, but since I've never worked with enormous projects, I've never had to resolve a merge conflict. Other than that, I can use it."
+
 - id: rust
   category: "programming-languages"
   name: "Rust"
